@@ -7,7 +7,7 @@ const CHECKOUT_LINKS = { 1: "", 2: "", 4: "" };
 const BUNDLES = {
   1: { name: "1 Set", price: 34.99, was: null },
   2: { name: "2 Sets", price: 59.99, was: 69.98 },
-  4: { name: "4 Sets – Family gift pack", price: 99.99, was: 139.96 },
+  4: { name: "4 Sets", price: 99.99, was: 139.96 },
 };
 const PRODUCT = { name: "Emberwell™ Rechargeable Hand Warmer", image: "/img/warmer-main.svg" };
 const CART_KEY = "emberwell-cart";
