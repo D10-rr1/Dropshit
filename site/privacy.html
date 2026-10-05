@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy – Emberwell</title>
+  <meta name="description" content="Rechargeable magnetic 2-in-1 hand warmer with 3 heat levels and USB-C charging. Free worldwide shipping and a 30-day money-back guarantee.">
+  <meta property="og:title" content="Emberwell™ – Warm hands. Anywhere.">
+  <meta property="og:description" content="The rechargeable hand warmer that splits in two. Free worldwide shipping.">
+  <meta property="og:image" content="/img/warmer-main.svg">
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<div class="announce" aria-live="polite">
+  <span class="is-active">🚚 Free worldwide shipping on every order</span>
+  <span>🎁 Order by Dec 5 for Christmas delivery</span>
+  <span>↩️ 30-day money-back guarantee</span>
+</div>
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="/"><img src="/img/favicon.svg" alt="">Emberwell</a>
+    <nav class="nav" aria-label="Main">
+      <a href="/#shop">Shop</a>
+      <a href="/#how">How it works</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    <button class="cart-btn" type="button" data-open-cart aria-label="Open cart">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+      <span class="cart-count" data-cart-count data-count="0">0</span>
+    </button>
+  </div>
+</header>
+
+<main class="page">
+<h1>Privacy policy</h1>
+
+<p>This policy explains what personal information we collect when you visit or buy from our store, and how we use it.</p>
+<h2>What we collect</h2>
+<p>When you place an order we collect your name, shipping address, email address and order details. Payments are processed by our payment provider; we never see or store your full card number.</p>
+<h2>How we use it</h2>
+<p>To fulfil and ship your order, send order and shipping updates, answer your questions and, if you opt in, send you offers by email.</p>
+<h2>Sharing</h2>
+<p>We share only what is needed with our payment provider, shipping partners and fulfilment partners. We never sell your data.</p>
+<h2>Cookies and analytics</h2>
+<p>We use cookies to keep your cart working and, if enabled, analytics and advertising pixels to understand and improve our ads.</p>
+<h2>Your rights</h2>
+<p>You can ask to see, correct or delete your data at any time by emailing <a href="mailto:support@emberwell.example">support@emberwell.example</a>.</p>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <h4>Emberwell</h4>
+        <p style="color:var(--ink-soft)">Rechargeable warmth for cold days. Questions? Email <a href="mailto:support@emberwell.example">support@emberwell.example</a>. We reply within 24 hours on weekdays.</p>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="/contact">Contact us</a></li>
+          <li><a href="/shipping">Shipping policy</a></li>
+          <li><a href="/returns">Refunds &amp; returns</a></li>
+          <li><a href="/privacy">Privacy policy</a></li>
+          <li><a href="/terms">Terms of service</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Join the list for winter deals</h4>
+        <form class="newsletter" data-newsletter>
+          <input type="email" required placeholder="Your email" aria-label="Email address">
+          <button class="btn" type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> Emberwell. All rights reserved.</span>
+      <span>Secure payments · Free worldwide shipping</span>
+    </div>
+  </div>
+</footer>
+
+<div class="overlay" data-close-cart></div>
+<aside class="drawer" aria-label="Shopping cart" aria-hidden="true">
+  <div class="drawer__head"><h3>Your cart</h3><button class="icon-btn" type="button" data-close-cart aria-label="Close cart">×</button></div>
+  <div class="drawer__ship">🚚 You've unlocked free worldwide shipping</div>
+  <div class="drawer__items" data-cart-items></div>
+  <div class="drawer__foot">
+    <div class="drawer__total"><span>Total</span><span data-cart-total>$0.00</span></div>
+    <div class="drawer__note">Taxes calculated at checkout. 30-day money-back guarantee.</div>
+    <button class="btn btn--block" type="button" data-checkout>Checkout securely</button>
+  </div>
+</aside>
+
+<div class="modal" data-modal role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal__box">
+    <h3 id="modal-title">Preview mode</h3>
+    <p data-modal-text style="color:var(--ink-soft)">This is a preview of the store. Payments (Stripe) will be connected before launch.</p>
+    <button class="btn" type="button" data-close-modal>Got it</button>
+  </div>
+</div>
+
+<script src="/app.js" defer></script>
+</body>
+</html>
