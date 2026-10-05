@@ -1,0 +1,421 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_position": "left",
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "show",
+        "hide_variants": true,
+        "enable_video_looping": true,
+        "padding_top": 24,
+        "padding_bottom": 24
+      },
+      "blocks": {
+        "cap": {
+          "type": "text",
+          "settings": {
+            "text": "Värmly™",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "sub": {
+          "type": "text",
+          "settings": {
+            "text": "✔ Trådlöst · ✔ 3 värmenivåer · ✔ USB-C",
+            "text_style": "body"
+          }
+        },
+        "vp": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "none"
+          }
+        },
+        "buy": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "delivery": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- assign mn = 'jan,feb,mar,apr,maj,jun,jul,aug,sep,okt,nov,dec' | split: ',' -%}\n{%- assign now_s = 'now' | date: '%s' | plus: 0 -%}\n{%- assign t1 = now_s | plus: 432000 -%}{%- assign t2 = now_s | plus: 1209600 -%}\n{%- assign m1 = t1 | date: '%m' | minus: 1 -%}{%- assign m2 = t2 | date: '%m' | minus: 1 -%}\n<p style=\"margin:0;padding:12px 16px;border-radius:12px;background:rgba(200,85,61,.08);font-size:1.4rem;line-height:1.5\">\n  🚚 <strong>Beräknad leverans:</strong> {{ t1 | date: '%-d' }} {{ mn[m1] }} – {{ t2 | date: '%-d' }} {{ mn[m2] }}<br>\n  💳 Betala direkt, med Klarna eller Swish\n</p>"
+          }
+        },
+        "trust": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "truck",
+            "heading_1": "Fri frakt",
+            "icon_2": "return",
+            "heading_2": "30 dagars öppet köp",
+            "icon_3": "lock",
+            "heading_3": "Säker betalning"
+          }
+        },
+        "desc": {
+          "type": "description",
+          "settings": {}
+        },
+        "spec": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Specifikationer",
+            "icon": "clipboard",
+            "content": "<p>Se produktbeskrivningen ovan. Uppdatera den här texten med exakta mått, batterikapacitet och material från din leverantör.</p>",
+            "page": ""
+          }
+        },
+        "ship": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Frakt och leverans",
+            "icon": "truck",
+            "content": "<p>Fri frakt på alla beställningar. Normal leveranstid är 5–10 arbetsdagar. Du får ett spårningsnummer via e-post.</p>",
+            "page": ""
+          }
+        },
+        "ret": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "30 dagars öppet köp",
+            "icon": "return",
+            "content": "<p>Inte nöjd? Kontakta oss inom 30 dagar så ordnar vi en retur och full återbetalning.</p>",
+            "page": ""
+          }
+        },
+        "safety": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Säkerhet",
+            "icon": "check_mark",
+            "content": "<p>Börja på lägsta värmenivån. Använd inte bältet medan du sover, på skadad hud eller om du har nedsatt känsel. Rådgör med vården vid graviditet eller medicinska tillstånd.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "cap",
+        "title",
+        "price",
+        "sub",
+        "vp",
+        "buy",
+        "delivery",
+        "trust",
+        "desc",
+        "spec",
+        "ship",
+        "ret",
+        "safety"
+      ]
+    },
+    "benefits": {
+      "type": "multicolumn",
+      "settings": {
+        "title": "Varför Värmly?",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "button_label": "",
+        "button_link": "",
+        "padding_top": 48,
+        "padding_bottom": 48
+      },
+      "blocks": {
+        "c1": {
+          "type": "column",
+          "settings": {
+            "title": "Trådlös och diskret",
+            "text": "<p>Ingen sladd, ingen varmvattenflaska. Bältet sitter under tröjan och följer med dig hela dagen.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "c2": {
+          "type": "column",
+          "settings": {
+            "title": "Varm på sekunder",
+            "text": "<p>Tryck en gång och känn värmen sprida sig efter en kort stund. Perfekt kalla höstmorgnar.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "c3": {
+          "type": "column",
+          "settings": {
+            "title": "Tre värmenivåer",
+            "text": "<p>Välj den värme som känns skönast för dig. Laddas med USB-C och räcker i flera timmar.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3"
+      ]
+    },
+    "how": {
+      "type": "multirow",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "primary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-1",
+        "row_color_scheme": "scheme-1",
+        "padding_top": 48,
+        "padding_bottom": 48
+      },
+      "blocks": {
+        "r1": {
+          "type": "row",
+          "settings": {
+            "caption": "Steg 1",
+            "heading": "Spänn fast",
+            "text": "<p>Justerbart elastiskt band som passar de flesta midjor. Bär det över magen eller ländryggen.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "r2": {
+          "type": "row",
+          "settings": {
+            "caption": "Steg 2",
+            "heading": "Välj värme",
+            "text": "<p>Tryck på knappen och välj mellan tre nivåer. Värmen stängs av automatiskt efter en stund för säkerhets skull.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "r3": {
+          "type": "row",
+          "settings": {
+            "caption": "Steg 3",
+            "heading": "Lev som vanligt",
+            "text": "<p>Jobba, plugga, ta en promenad eller krypa upp i soffan. Värmen följer med.</p>",
+            "button_label": "Jag vill ha ett",
+            "button_link": "shopify://products/varmebalte"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3"
+      ]
+    },
+    "guarantee": {
+      "type": "image-with-text",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-5",
+        "padding_top": 36,
+        "padding_bottom": 36
+      },
+      "blocks": {
+        "cap": {
+          "type": "caption",
+          "settings": {
+            "caption": "Riskfritt köp",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "h": {
+          "type": "heading",
+          "settings": {
+            "heading": "30 dagars nöjd-kund-garanti",
+            "heading_size": "h1"
+          }
+        },
+        "t": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Testa Värmly i 30 dagar. Om du inte är nöjd skickar du tillbaka det och får pengarna tillbaka. Enkelt.</p>",
+            "text_style": "body"
+          }
+        },
+        "btn": {
+          "type": "button",
+          "settings": {
+            "button_label": "Handla nu",
+            "button_link": "shopify://products/varmebalte",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "cap",
+        "h",
+        "t",
+        "btn"
+      ]
+    },
+    "faq": {
+      "type": "collapsible-content",
+      "settings": {
+        "caption": "",
+        "heading": "Vanliga frågor",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 48,
+        "padding_bottom": 48
+      },
+      "blocks": {
+        "q0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Hur länge håller batteriet?",
+            "icon": "lightning_bolt",
+            "row_content": "<p>Det beror på värmenivån. På lägsta nivån räcker en full laddning flera timmar. Det laddas med USB-C.</p>"
+          }
+        },
+        "q1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kan jag ha det under kläderna?",
+            "icon": "shirt",
+            "row_content": "<p>Ja, bältet är tunt och smidigt och gjort för att bäras under en tröja eller jacka.</p>"
+          }
+        },
+        "q2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Hur varmt blir det?",
+            "icon": "fire",
+            "row_content": "<p>Det finns tre nivåer, från mild värme till riktigt varmt. Börja på lägsta nivån och känn dig fram. Använd inte bältet direkt mot huden under långa perioder och inte medan du sover.</p>"
+          }
+        },
+        "q3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "När kommer min beställning?",
+            "icon": "truck",
+            "row_content": "<p>Normalt inom 5–10 arbetsdagar. Du får ett spårningsnummer via e-post när paketet skickats.</p>"
+          }
+        },
+        "q4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kan jag ångra mitt köp?",
+            "icon": "return",
+            "row_content": "<p>Ja, du har 30 dagars öppet köp. Kontakta oss så hjälper vi dig.</p>"
+          }
+        },
+        "q5": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Hur betalar jag?",
+            "icon": "lock",
+            "row_content": "<p>Med kort, Klarna, Swish, Apple Pay eller Google Pay. Alla betalningar är krypterade.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q0",
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5"
+      ]
+    },
+    "cta": {
+      "type": "rich-text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 56,
+        "padding_bottom": 56
+      },
+      "blocks": {
+        "h": {
+          "type": "heading",
+          "settings": {
+            "heading": "Gör kalla dagar lite skönare",
+            "heading_size": "h1"
+          }
+        },
+        "t": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Fri frakt, 30 dagars öppet köp och betalning med Klarna eller Swish.</p>"
+          }
+        },
+        "btn": {
+          "type": "button",
+          "settings": {
+            "button_label": "Beställ ditt Värmly",
+            "button_link": "shopify://products/varmebalte",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "h",
+        "t",
+        "btn"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "benefits",
+    "how",
+    "guarantee",
+    "faq",
+    "cta"
+  ]
+}
