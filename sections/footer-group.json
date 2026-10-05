@@ -8,14 +8,14 @@
         "brand": {
           "type": "text",
           "settings": {
-            "heading": "Värmly",
-            "subtext": "<p>Trådlös värme för kalla och tunga dagar.</p><p>Kundtjänst: hej@DINDOMÄN.se – vi svarar inom 24 timmar på vardagar.</p>"
+            "heading": "Emberwell",
+            "subtext": "<p>Rechargeable warmth for cold days.</p><p>Support: support@YOURSTORE.com – we reply within 24 hours on weekdays.</p>"
           }
         },
         "links": {
           "type": "link_list",
           "settings": {
-            "heading": "Information",
+            "heading": "Info",
             "menu": "footer"
           }
         }
@@ -27,10 +27,10 @@
       "settings": {
         "color_scheme": "scheme-2",
         "newsletter_enable": true,
-        "newsletter_heading": "Få 10 % rabatt på din första beställning",
+        "newsletter_heading": "Join the list for winter deals",
         "enable_follow_on_shop": false,
         "show_social": true,
-        "enable_country_selector": false,
+        "enable_country_selector": true,
         "enable_language_selector": false,
         "payment_enable": true,
         "show_policy": true,

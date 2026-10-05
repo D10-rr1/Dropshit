@@ -1,7 +1,7 @@
 {
-  "current": "Varmly",
+  "current": "Emberwell",
   "presets": {
-    "Varmly": {
+    "Emberwell": {
       "logo_width": 90,
       "customer_account_menu": "customer-account-main-menu",
       "color_schemes": {
@@ -156,8 +156,8 @@
       "badge_corner_radius": 40,
       "sale_badge_color_scheme": "scheme-4",
       "sold_out_badge_color_scheme": "scheme-3",
-      "brand_headline": "Värme som följer med dig",
-      "brand_description": "<p>Värmly gör trådlösa värmebälten för kalla dagar och tunga dagar – så att du slipper sitta fast vid en varmvattenflaska.</p>",
+      "brand_headline": "Warm hands. Anywhere.",
+      "brand_description": "<p>Emberwell makes rechargeable hand warmers that split in two, so cold days are a little easier.</p>",
       "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",

@@ -17,21 +17,21 @@
         "a1": {
           "type": "announcement",
           "settings": {
-            "text": "🚚 Fri frakt på alla beställningar",
+            "text": "🚚 Free worldwide shipping",
             "link": ""
           }
         },
         "a2": {
           "type": "announcement",
           "settings": {
-            "text": "↩️ 30 dagars öppet köp",
+            "text": "🎁 Order by Dec 5 for Christmas delivery",
             "link": ""
           }
         },
         "a3": {
           "type": "announcement",
           "settings": {
-            "text": "💳 Betala med Klarna eller Swish",
+            "text": "↩️ 30-day money-back guarantee",
             "link": ""
           }
         }
@@ -52,7 +52,7 @@
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "always",
         "show_line_separator": true,
-        "enable_country_selector": false,
+        "enable_country_selector": true,
         "enable_language_selector": false,
         "mobile_logo_position": "center",
         "margin_bottom": 0,

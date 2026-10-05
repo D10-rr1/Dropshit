@@ -18,29 +18,29 @@
         "cap": {
           "type": "text",
           "settings": {
-            "text": "NYHET HÖSTEN 2026",
+            "text": "WINTER 2026 · FREE SHIPPING",
             "text_style": "caption-with-letter-spacing"
           }
         },
         "h": {
           "type": "heading",
           "settings": {
-            "heading": "Släng varmvattenflaskan.",
+            "heading": "Warm hands. Anywhere.",
             "heading_size": "hxl"
           }
         },
         "t": {
           "type": "text",
           "settings": {
-            "text": "Trådlös värme runt magen eller ländryggen – var du än är.",
+            "text": "The rechargeable hand warmer that splits in two. Ditch the disposable packets for good.",
             "text_style": "subtitle"
           }
         },
         "btn": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Handla nu",
-            "button_link_1": "shopify://products/varmebalte",
+            "button_label_1": "Shop now",
+            "button_link_1": "shopify://products/rechargeable-hand-warmer",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -58,7 +58,7 @@
     "benefits": {
       "type": "multicolumn",
       "settings": {
-        "title": "Varför Värmly?",
+        "title": "Why Emberwell?",
         "heading_size": "h1",
         "image_width": "third",
         "image_ratio": "adapt",
@@ -77,8 +77,8 @@
         "c1": {
           "type": "column",
           "settings": {
-            "title": "Trådlös och diskret",
-            "text": "<p>Ingen sladd, ingen varmvattenflaska. Bältet sitter under tröjan och följer med dig hela dagen.</p>",
+            "title": "Two warmers, one snap",
+            "text": "<p>Two pocket-sized warmers snap together magnetically. Split them for both hands or share one with a friend.</p>",
             "link_label": "",
             "link": ""
           }
@@ -86,8 +86,8 @@
         "c2": {
           "type": "column",
           "settings": {
-            "title": "Varm på sekunder",
-            "text": "<p>Tryck en gång och känn värmen sprida sig efter en kort stund. Perfekt kalla höstmorgnar.</p>",
+            "title": "Warm in seconds",
+            "text": "<p>Press once and feel the heat build fast. No shaking, no lighter fluid, no single-use packets.</p>",
             "link_label": "",
             "link": ""
           }
@@ -95,8 +95,8 @@
         "c3": {
           "type": "column",
           "settings": {
-            "title": "Tre värmenivåer",
-            "text": "<p>Välj den värme som känns skönast för dig. Laddas med USB-C och räcker i flera timmar.</p>",
+            "title": "Rechargeable with USB-C",
+            "text": "<p>Charge it like your phone and use it all winter. Better for your wallet and the planet than disposable warmers.</p>",
             "link_label": "",
             "link": ""
           }
@@ -111,7 +111,7 @@
     "featured": {
       "type": "featured-product",
       "settings": {
-        "product": "varmebalte",
+        "product": "rechargeable-hand-warmer",
         "color_scheme": "scheme-1",
         "secondary_background": false,
         "media_size": "large",
@@ -128,7 +128,7 @@
         "cap": {
           "type": "text",
           "settings": {
-            "text": "Värmly™",
+            "text": "Emberwell™",
             "text_style": "uppercase"
           }
         },
@@ -161,11 +161,11 @@
           "settings": {
             "layout": "horizontal",
             "icon_1": "truck",
-            "heading_1": "Fri frakt",
+            "heading_1": "Free worldwide shipping",
             "icon_2": "return",
-            "heading_2": "30 dagars öppet köp",
+            "heading_2": "30-day money-back guarantee",
             "icon_3": "lock",
-            "heading_3": "Säker betalning"
+            "heading_3": "Secure checkout"
           }
         }
       },
@@ -199,9 +199,9 @@
         "r1": {
           "type": "row",
           "settings": {
-            "caption": "Steg 1",
-            "heading": "Spänn fast",
-            "text": "<p>Justerbart elastiskt band som passar de flesta midjor. Bär det över magen eller ländryggen.</p>",
+            "caption": "Step 1",
+            "heading": "Split it",
+            "text": "<p>Pull the two halves apart. One for each pocket, each glove or each person.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -209,9 +209,9 @@
         "r2": {
           "type": "row",
           "settings": {
-            "caption": "Steg 2",
-            "heading": "Välj värme",
-            "text": "<p>Tryck på knappen och välj mellan tre nivåer. Värmen stängs av automatiskt efter en stund för säkerhets skull.</p>",
+            "caption": "Step 2",
+            "heading": "Pick your heat",
+            "text": "<p>Choose between three heat levels with one button. The light shows which level is on.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -219,11 +219,11 @@
         "r3": {
           "type": "row",
           "settings": {
-            "caption": "Steg 3",
-            "heading": "Lev som vanligt",
-            "text": "<p>Jobba, plugga, ta en promenad eller krypa upp i soffan. Värmen följer med.</p>",
-            "button_label": "Jag vill ha ett",
-            "button_link": "shopify://products/varmebalte"
+            "caption": "Step 3",
+            "heading": "Stay warm out there",
+            "text": "<p>Commutes, dog walks, game days, ski lifts, fishing trips. Snap it back together and recharge when you're home.</p>",
+            "button_label": "I want one",
+            "button_link": "shopify://products/rechargeable-hand-warmer"
           }
         }
       },
@@ -231,6 +231,61 @@
         "r1",
         "r2",
         "r3"
+      ]
+    },
+    "gift": {
+      "type": "image-with-text",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      },
+      "blocks": {
+        "cap": {
+          "type": "caption",
+          "settings": {
+            "caption": "The gift everyone actually uses",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "h": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sorted: Christmas gifts for the whole family",
+            "heading_size": "h1"
+          }
+        },
+        "t": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Arrives in a gift-ready box. Grab the 4-pack and tick off Mom, Dad, your partner and yourself in one go.</p>",
+            "text_style": "body"
+          }
+        },
+        "btn": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop gift packs",
+            "button_link": "shopify://products/rechargeable-hand-warmer",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "cap",
+        "h",
+        "t",
+        "btn"
       ]
     },
     "guarantee": {
@@ -253,7 +308,7 @@
         "cap": {
           "type": "caption",
           "settings": {
-            "caption": "Riskfritt köp",
+            "caption": "Zero risk",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -261,22 +316,22 @@
         "h": {
           "type": "heading",
           "settings": {
-            "heading": "30 dagars nöjd-kund-garanti",
+            "heading": "30-day money-back guarantee",
             "heading_size": "h1"
           }
         },
         "t": {
           "type": "text",
           "settings": {
-            "text": "<p>Testa Värmly i 30 dagar. Om du inte är nöjd skickar du tillbaka det och får pengarna tillbaka. Enkelt.</p>",
+            "text": "<p>Try Emberwell for 30 days. If you don't love it, send it back for a full refund. No hassle.</p>",
             "text_style": "body"
           }
         },
         "btn": {
           "type": "button",
           "settings": {
-            "button_label": "Handla nu",
-            "button_link": "shopify://products/varmebalte",
+            "button_label": "Shop now",
+            "button_link": "shopify://products/rechargeable-hand-warmer",
             "button_style_secondary": false
           }
         }
@@ -292,7 +347,7 @@
       "type": "collapsible-content",
       "settings": {
         "caption": "",
-        "heading": "Vanliga frågor",
+        "heading": "Frequently asked questions",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
@@ -308,49 +363,49 @@
         "q0": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Hur länge håller batteriet?",
+            "heading": "How long does the battery last?",
             "icon": "lightning_bolt",
-            "row_content": "<p>Det beror på värmenivån. På lägsta nivån räcker en full laddning flera timmar. Det laddas med USB-C.</p>"
+            "row_content": "<p>It depends on the heat level. The lowest level lasts the longest, the highest gets you warm the fastest. Exact battery times are listed in the product specifications. It recharges with the included USB-C cable.</p>"
           }
         },
         "q1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Kan jag ha det under kläderna?",
-            "icon": "shirt",
-            "row_content": "<p>Ja, bältet är tunt och smidigt och gjort för att bäras under en tröja eller jacka.</p>"
+            "heading": "How hot does it get?",
+            "icon": "fire",
+            "row_content": "<p>There are three levels, from gentle warmth to properly hot. Start on low, never hold it directly against bare skin for a long time, and don't use it while sleeping.</p>"
           }
         },
         "q2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Hur varmt blir det?",
-            "icon": "fire",
-            "row_content": "<p>Det finns tre nivåer, från mild värme till riktigt varmt. Börja på lägsta nivån och känn dig fram. Använd inte bältet direkt mot huden under långa perioder och inte medan du sover.</p>"
+            "heading": "Can I take it on a plane?",
+            "icon": "plane",
+            "row_content": "<p>It contains a lithium battery, so pack it in your carry-on, not in checked luggage, and follow your airline's rules.</p>"
           }
         },
         "q3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "När kommer min beställning?",
+            "heading": "Do you ship to my country?",
             "icon": "truck",
-            "row_content": "<p>Normalt inom 5–10 arbetsdagar. Du får ett spårningsnummer via e-post när paketet skickats.</p>"
+            "row_content": "<p>We ship worldwide with free shipping. Delivery usually takes 7–15 business days and you get a tracking link by email.</p>"
           }
         },
         "q4": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Kan jag ångra mitt köp?",
-            "icon": "return",
-            "row_content": "<p>Ja, du har 30 dagars öppet köp. Kontakta oss så hjälper vi dig.</p>"
+            "heading": "Will it arrive before Christmas?",
+            "icon": "star",
+            "row_content": "<p>Order by December 5 for the best chance of delivery before Christmas.</p>"
           }
         },
         "q5": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Hur betalar jag?",
-            "icon": "lock",
-            "row_content": "<p>Med kort, Klarna, Swish, Apple Pay eller Google Pay. Alla betalningar är krypterade.</p>"
+            "heading": "What if I don't like it?",
+            "icon": "return",
+            "row_content": "<p>You have a 30-day money-back guarantee. Email us and we'll sort it out.</p>"
           }
         }
       },
@@ -377,21 +432,21 @@
         "h": {
           "type": "heading",
           "settings": {
-            "heading": "Gör kalla dagar lite skönare",
+            "heading": "Never have cold hands again",
             "heading_size": "h1"
           }
         },
         "t": {
           "type": "text",
           "settings": {
-            "text": "<p>Fri frakt, 30 dagars öppet köp och betalning med Klarna eller Swish.</p>"
+            "text": "<p>Free worldwide shipping, a 30-day money-back guarantee and secure checkout.</p>"
           }
         },
         "btn": {
           "type": "button",
           "settings": {
-            "button_label": "Beställ ditt Värmly",
-            "button_link": "shopify://products/varmebalte",
+            "button_label": "Get your Emberwell",
+            "button_link": "shopify://products/rechargeable-hand-warmer",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -411,6 +466,7 @@
     "benefits",
     "featured",
     "how",
+    "gift",
     "guarantee",
     "faq",
     "cta"
