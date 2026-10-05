@@ -35,7 +35,7 @@ function renderCart() {
   const items = $("[data-cart-items]");
   if (!items) return;
   if (!count) {
-    items.innerHTML = '<div class="drawer__empty">Your cart is empty.<br><br><a class="btn btn--ghost" href="/#shop" data-close-cart>Shop now</a></div>';
+    items.innerHTML = '<div class="drawer__empty">Your cart is empty.<br><a class="btn" href="/#shop" data-close-cart>Shop now</a></div>';
   } else {
     items.innerHTML = Object.entries(cart).map(([id, q]) => `
       <div class="line">
@@ -96,7 +96,7 @@ function updatePrice() {
   const save = $("[data-save]");
   if (b.was) {
     was.textContent = money(b.was);
-    save.textContent = "Save " + money(b.was - b.price).replace(".00", "");
+    save.textContent = "Save $" + Math.round(b.was - b.price);
     was.hidden = save.hidden = false;
   } else {
     was.hidden = save.hidden = true;
@@ -142,12 +142,9 @@ document.addEventListener("click", (e) => {
     if (!ids.length) return;
     const link = ids.length === 1 && cart[ids[0]] === 1 ? CHECKOUT_LINKS[ids[0]] : "";
     if (link) window.location.href = link;
-    else openModal("This is a preview of the store. Real checkout (cards, Apple Pay, Google Pay) will be switched on before launch.");
+    else openModal();
   } else if (t.matches("[data-close-modal]")) {
     $("[data-modal]").classList.remove("is-open");
-  } else if (t.matches("[data-pick]")) {
-    const input = $(`input[name="bundle"][value="${t.dataset.pick}"]`);
-    if (input) { input.checked = true; updatePrice(); }
   } else if (t.closest(".gallery__thumbs")) {
     $$(".gallery__thumbs button").forEach((b) => b.classList.toggle("is-active", b === t));
     $("#gallery-main").src = t.dataset.src;
@@ -162,32 +159,8 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") { closeCart(); $("[data-modal]")?.classList.remove("is-open"); }
 });
 
-$$("[data-newsletter]").forEach((form) =>
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    form.innerHTML = '<p style="margin:0;font-weight:600">Thanks! You\'re on the list. 🔥</p>';
-  })
-);
-
-// ---------- Announcement bar ----------
-(function rotateAnnouncements() {
-  const items = $$(".announce span");
-  if (items.length < 2) return;
-  let i = 0;
-  setInterval(() => {
-    items[i].classList.remove("is-active");
-    i = (i + 1) % items.length;
-    items[i].classList.add("is-active");
-  }, 4000);
-})();
-
-// ---------- Scroll effects ----------
+// ---------- Sticky mobile buy bar ----------
 if ("IntersectionObserver" in window) {
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add("is-in"); io.unobserve(en.target); } });
-  }, { threshold: 0.15 });
-  $$(".reveal").forEach((el) => io.observe(el));
-
   const mainBuy = $(".product__info [data-add-to-cart]");
   const sticky = $("[data-sticky-buy]");
   if (mainBuy && sticky) {
@@ -195,8 +168,6 @@ if ("IntersectionObserver" in window) {
       sticky.classList.toggle("is-visible", !en.isIntersecting && en.boundingClientRect.top < 0);
     }).observe(mainBuy);
   }
-} else {
-  $$(".reveal").forEach((el) => el.classList.add("is-in"));
 }
 
 $$("[data-year]").forEach((el) => (el.textContent = new Date().getFullYear()));

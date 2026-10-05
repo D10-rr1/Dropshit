@@ -11,22 +11,17 @@
   <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body class="has-sticky">
 <!--HEADER-->
-<div class="announce" aria-live="polite">
-  <span class="is-active">🚚 Free worldwide shipping on every order</span>
-  <span>🎁 Order by Dec 5 for Christmas delivery</span>
-  <span>↩️ 30-day money-back guarantee</span>
-</div>
+<div class="announce">Free worldwide shipping · 30-day money-back guarantee</div>
 <header class="header">
   <div class="container header__inner">
     <a class="logo" href="/"><img src="/img/favicon.svg" alt="">Emberwell</a>
     <nav class="nav" aria-label="Main">
       <a href="/#shop">Shop</a>
-      <a href="/#how">How it works</a>
       <a href="/#faq">FAQ</a>
       <a href="/contact">Contact</a>
     </nav>
@@ -43,46 +38,12 @@
   <section class="hero">
     <div class="container hero__grid">
       <div>
-        <span class="eyebrow">Winter 2026 · Free shipping</span>
         <h1>Warm hands.<br><em>Anywhere.</em></h1>
-        <p class="lead">The rechargeable hand warmer that splits in two. Charge it like your phone, ditch disposable packets for good, and stay warm all winter.</p>
-        <div class="hero__actions">
-          <a class="btn" href="#shop">Shop now – from $34.99</a>
-          <a class="btn btn--ghost" href="#how">See how it works</a>
-        </div>
-        <ul class="chips">
-          <li>🧲 Splits in two</li>
-          <li>🔥 3 heat levels</li>
-          <li>🔋 USB-C rechargeable</li>
-        </ul>
+        <p class="lead">The rechargeable hand warmer that splits in two. Charge it like your phone and stay warm all winter.</p>
+        <a class="btn" href="#shop">Shop now – from $34.99</a>
       </div>
       <div class="hero__media">
-        <img class="hero__img" src="/img/warmer-main.svg" alt="Emberwell rechargeable hand warmer glowing warm" width="800" height="800">
-      </div>
-    </div>
-  </section>
-
-  <!-- Benefits -->
-  <section class="section section--alt">
-    <div class="container center">
-      <span class="eyebrow">Why Emberwell</span>
-      <h2>Small enough for any pocket.<br>Warm enough for any winter.</h2>
-      <div class="grid-3">
-        <div class="card reveal">
-          <div class="card__icon">🧲</div>
-          <h3>Two warmers, one snap</h3>
-          <p>Two pocket-sized halves snap together magnetically. Split them for both hands or share one with a friend.</p>
-        </div>
-        <div class="card reveal">
-          <div class="card__icon">🔥</div>
-          <h3>Warm in seconds</h3>
-          <p>Press once and feel the heat build fast. No shaking, no lighter fluid, no single-use packets.</p>
-        </div>
-        <div class="card reveal">
-          <div class="card__icon">🔋</div>
-          <h3>Rechargeable with USB-C</h3>
-          <p>Charge it with the same cable as your phone and use it all winter long. Better for your wallet and the planet.</p>
-        </div>
+        <img class="hero__img" src="/img/warmer-main.svg" alt="Emberwell rechargeable hand warmer" width="800" height="800">
       </div>
     </div>
   </section>
@@ -92,7 +53,7 @@
     <div class="container product">
       <div class="gallery">
         <div class="gallery__main"><img id="gallery-main" src="/img/warmer-main.svg" alt="Emberwell hand warmer" width="800" height="800"></div>
-        <div class="gallery__thumbs" role="list">
+        <div class="gallery__thumbs">
           <button type="button" class="is-active" data-src="/img/warmer-main.svg" aria-label="View 1"><img src="/img/warmer-main.svg" alt=""></button>
           <button type="button" data-src="/img/warmer-split.svg" aria-label="View 2"><img src="/img/warmer-split.svg" alt=""></button>
           <button type="button" data-src="/img/warmer-charging.svg" aria-label="View 3"><img src="/img/warmer-charging.svg" alt=""></button>
@@ -101,8 +62,7 @@
       </div>
 
       <div class="product__info">
-        <div class="product__brand">Emberwell™</div>
-        <h2 class="product__title">Rechargeable Hand Warmer</h2>
+        <h2 class="product__title">Emberwell™ Rechargeable Hand Warmer</h2>
         <div class="price">
           <span class="price__now" data-price>$34.99</span>
           <span class="price__was" data-was hidden></span>
@@ -110,9 +70,8 @@
         </div>
         <ul class="ticks">
           <li>Splits into two magnetic warmers</li>
-          <li>3 heat levels with one button</li>
-          <li>USB-C rechargeable, cable included</li>
-          <li>Gift-ready box</li>
+          <li>3 heat levels, warm in seconds</li>
+          <li>USB-C rechargeable</li>
         </ul>
 
         <fieldset class="bundles">
@@ -125,193 +84,117 @@
           <label class="bundle">
             <span class="bundle__tag">MOST POPULAR</span>
             <input type="radio" name="bundle" value="2">
-            <span class="bundle__text"><span class="bundle__name">2 Sets</span><span class="bundle__sub">One for you, one to gift · Save $10</span></span>
+            <span class="bundle__text"><span class="bundle__name">2 Sets</span><span class="bundle__sub">Save $10</span></span>
             <span class="bundle__price">$59.99<s>$69.98</s></span>
           </label>
           <label class="bundle">
             <span class="bundle__tag">BEST VALUE</span>
             <input type="radio" name="bundle" value="4">
-            <span class="bundle__text"><span class="bundle__name">4 Sets – Family gift pack</span><span class="bundle__sub">Christmas sorted · Save $40</span></span>
+            <span class="bundle__text"><span class="bundle__name">4 Sets</span><span class="bundle__sub">Save $40</span></span>
             <span class="bundle__price">$99.99<s>$139.96</s></span>
           </label>
         </fieldset>
 
         <button class="btn btn--block" type="button" data-add-to-cart>Add to cart</button>
 
-        <div class="delivery">🚚 <strong>Estimated delivery:</strong> <span data-delivery>7–15 business days</span><br>🎁 Order by December 5 for Christmas delivery</div>
+        <p class="delivery">Estimated delivery: <strong data-delivery>7–15 business days</strong></p>
 
         <div class="trust">
-          <div><span>🚚</span>Free shipping</div>
-          <div><span>↩️</span>30-day guarantee</div>
-          <div><span>🔒</span>Secure checkout</div>
-        </div>
-        <div class="pay-icons" aria-label="Accepted payments">
-          <span>VISA</span><span>Mastercard</span><span>AMEX</span><span>PayPal</span><span>Apple Pay</span><span>Google Pay</span>
+          <div>Free shipping</div>
+          <div>30-day guarantee</div>
+          <div>Secure checkout</div>
         </div>
 
         <div class="accordion">
           <details>
             <summary>Specifications</summary>
-            <div>
-              <p>Two magnetic warmer halves · 3 heat levels · USB-C charging · LED level indicator · Cable and gift box included.</p>
-              <p><em>Exact battery capacity, run time per level, size and weight will be added from the supplier's spec sheet.</em></p>
-            </div>
+            <div><p>Two magnetic warmer halves · 3 heat levels · USB-C charging · LED level indicator · Cable included.</p></div>
           </details>
           <details>
-            <summary>Shipping &amp; delivery</summary>
-            <div><p>Free shipping worldwide. Orders are processed within 1–3 business days and usually arrive within 7–15 business days. You'll get a tracking link by email.</p></div>
-          </details>
-          <details>
-            <summary>30-day money-back guarantee</summary>
-            <div><p>Not happy? Email us within 30 days of delivery and we'll arrange a return and a full refund.</p></div>
+            <summary>Shipping &amp; returns</summary>
+            <div><p>Free shipping worldwide, usually 7–15 business days, with tracking. Not happy? Return it within 30 days for a full refund.</p></div>
           </details>
           <details>
             <summary>Safety</summary>
-            <div><p>Start on the lowest level. Don't hold it against bare skin for long periods, don't use it while sleeping, and keep it away from water and young children. People with reduced sensation should check with a doctor first.</p></div>
+            <div><p>Start on the lowest level. Don't hold it against bare skin for long periods or use it while sleeping. Keep away from water and young children.</p></div>
           </details>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- How it works -->
-  <section class="section section--alt" id="how">
-    <div class="container center">
-      <span class="eyebrow">How it works</span>
-      <h2>Split. Click. Warm.</h2>
-      <div class="steps">
-        <div class="step reveal"><h3>Split it</h3><p>Pull the two halves apart. One for each pocket, each glove or each person.</p></div>
-        <div class="step reveal"><h3>Pick your heat</h3><p>Choose between three heat levels with one button. The light shows which level is on.</p></div>
-        <div class="step reveal"><h3>Stay warm out there</h3><p>Commutes, dog walks, game days, ski lifts. Snap it back together and recharge at home.</p></div>
+  <!-- Benefits -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="grid-3">
+        <div class="card">
+          <h3>Splits in two</h3>
+          <p>Two halves snap together magnetically. One for each hand, or share one with a friend.</p>
+        </div>
+        <div class="card">
+          <h3>Warm in seconds</h3>
+          <p>One click and it heats up. No shaking, no single-use packets.</p>
+        </div>
+        <div class="card">
+          <h3>Rechargeable</h3>
+          <p>Charge it with a USB-C cable and use it all winter long.</p>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Compare -->
-  <section class="section">
-    <div class="container center">
-      <span class="eyebrow">The smarter choice</span>
-      <h2>Emberwell vs. disposable warmers</h2>
-      <table class="compare">
-        <thead><tr><th></th><th class="us">Emberwell</th><th>Disposable packets</th></tr></thead>
-        <tbody>
-          <tr><td>Reusable all winter</td><td class="yes">✓</td><td class="no">✕</td></tr>
-          <tr><td>Adjustable heat</td><td class="yes">3 levels</td><td class="no">✕</td></tr>
-          <tr><td>Warm on demand</td><td class="yes">One click</td><td class="no">Shake &amp; wait</td></tr>
-          <tr><td>Shareable with a friend</td><td class="yes">Splits in two</td><td class="no">✕</td></tr>
-          <tr><td>Waste</td><td class="yes">None</td><td class="no">Daily trash</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- Gift -->
-  <section class="section section--soft">
-    <div class="container split">
-      <div class="split__media"><img src="/img/warmer-gift.svg" alt="Emberwell gift box" width="800" height="800" loading="lazy"></div>
-      <div>
-        <span class="eyebrow">The gift everyone actually uses</span>
-        <h2>Christmas gifts for the whole family, sorted.</h2>
-        <p class="lead">Every Emberwell arrives in a gift-ready box. Grab the 4-pack and tick off Mom, Dad, your partner and yourself in one go.</p>
-        <a class="btn" href="#shop" data-pick="4">Shop the family pack</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Guarantee -->
-  <section class="section">
-    <div class="container split split--reverse">
-      <div>
-        <span class="eyebrow">Zero risk</span>
-        <h2>30-day money-back guarantee</h2>
-        <p class="lead">Try Emberwell for 30 days. If you don't love it, send it back for a full refund. No hassle, no awkward questions.</p>
-        <a class="btn" href="#shop">Try it risk-free</a>
-      </div>
-      <div class="split__media"><img src="/img/warmer-split.svg" alt="Emberwell splits into two halves" width="800" height="800" loading="lazy"></div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="section section--alt" id="faq">
-    <div class="container center">
-      <span class="eyebrow">Questions?</span>
-      <h2>Frequently asked questions</h2>
-      <div class="faq accordion" style="text-align:left;border:0">
-        <details><summary>How long does the battery last?</summary><div><p>It depends on the heat level: the lowest level lasts the longest, the highest gets you warm fastest. Exact run times are listed under Specifications. It recharges with the included USB-C cable.</p></div></details>
-        <details><summary>How hot does it get?</summary><div><p>There are three levels, from gentle warmth to properly hot. Start on low, never hold it directly against bare skin for a long time, and don't use it while sleeping.</p></div></details>
-        <details><summary>Can I take it on a plane?</summary><div><p>It contains a lithium battery, so pack it in your carry-on, not in checked luggage, and follow your airline's rules.</p></div></details>
-        <details><summary>Do you ship to my country?</summary><div><p>We ship worldwide with free shipping. Delivery usually takes 7–15 business days and you'll get a tracking link by email.</p></div></details>
-        <details><summary>Will it arrive before Christmas?</summary><div><p>Order by December 5 for the best chance of delivery before Christmas.</p></div></details>
+  <section class="section" id="faq">
+    <div class="container">
+      <h2 class="center">FAQ</h2>
+      <div class="faq accordion">
+        <details><summary>How long does the battery last?</summary><div><p>It depends on the heat level: the lowest level lasts the longest. It recharges with the included USB-C cable.</p></div></details>
+        <details><summary>Can I take it on a plane?</summary><div><p>Yes, in your carry-on. It contains a lithium battery, so don't pack it in checked luggage.</p></div></details>
+        <details><summary>How long does shipping take?</summary><div><p>Usually 7–15 business days. Shipping is free and you'll get a tracking link by email.</p></div></details>
         <details><summary>What if I don't like it?</summary><div><p>You have a 30-day money-back guarantee. Email us and we'll sort it out.</p></div></details>
       </div>
-    </div>
-  </section>
-
-  <!-- Final CTA -->
-  <section class="section section--dark center">
-    <div class="container">
-      <span class="eyebrow">Winter is coming</span>
-      <h2>Never have cold hands again</h2>
-      <p class="lead" style="color:#E8D5C8">Free worldwide shipping, a 30-day money-back guarantee and secure checkout.</p>
-      <a class="btn btn--light" href="#shop" style="margin-top:12px">Get your Emberwell</a>
     </div>
   </section>
 </main>
 
 <div class="sticky-buy" data-sticky-buy>
-  <div><div style="font-size:.8rem;color:var(--ink-soft)">Emberwell™</div><div class="sticky-buy__price" data-sticky-price>$34.99</div></div>
+  <div class="sticky-buy__price" data-sticky-price>$34.99</div>
   <button class="btn" type="button" data-add-to-cart>Add to cart</button>
 </div>
 
 <!--FOOTER-->
 <footer class="footer">
-  <div class="container">
-    <div class="footer__grid">
-      <div>
-        <h4>Emberwell</h4>
-        <p style="color:var(--ink-soft)">Rechargeable warmth for cold days. Questions? Email <a href="mailto:support@emberwell.example">support@emberwell.example</a>. We reply within 24 hours on weekdays.</p>
-      </div>
-      <div>
-        <h4>Help</h4>
-        <ul>
-          <li><a href="/contact">Contact us</a></li>
-          <li><a href="/shipping">Shipping policy</a></li>
-          <li><a href="/returns">Refunds &amp; returns</a></li>
-          <li><a href="/privacy">Privacy policy</a></li>
-          <li><a href="/terms">Terms of service</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Join the list for winter deals</h4>
-        <form class="newsletter" data-newsletter>
-          <input type="email" required placeholder="Your email" aria-label="Email address">
-          <button class="btn" type="submit">Join</button>
-        </form>
-      </div>
+  <div class="container footer__inner">
+    <div>
+      <a class="logo" href="/"><img src="/img/favicon.svg" alt="">Emberwell</a>
+      <p class="footer__contact"><a href="mailto:support@emberwell.example">support@emberwell.example</a></p>
     </div>
-    <div class="footer__bottom">
-      <span>© <span data-year>2026</span> Emberwell. All rights reserved.</span>
-      <span>Secure payments · Free worldwide shipping</span>
-    </div>
+    <ul class="footer__links">
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/shipping">Shipping</a></li>
+      <li><a href="/returns">Returns</a></li>
+      <li><a href="/privacy">Privacy</a></li>
+      <li><a href="/terms">Terms</a></li>
+    </ul>
   </div>
+  <div class="container footer__bottom">© <span data-year>2026</span> Emberwell</div>
 </footer>
 
 <div class="overlay" data-close-cart></div>
 <aside class="drawer" aria-label="Shopping cart" aria-hidden="true">
   <div class="drawer__head"><h3>Your cart</h3><button class="icon-btn" type="button" data-close-cart aria-label="Close cart">×</button></div>
-  <div class="drawer__ship">🚚 You've unlocked free worldwide shipping</div>
   <div class="drawer__items" data-cart-items></div>
   <div class="drawer__foot">
     <div class="drawer__total"><span>Total</span><span data-cart-total>$0.00</span></div>
-    <div class="drawer__note">Taxes calculated at checkout. 30-day money-back guarantee.</div>
-    <button class="btn btn--block" type="button" data-checkout>Checkout securely</button>
+    <div class="drawer__note">Free shipping · 30-day money-back guarantee</div>
+    <button class="btn btn--block" type="button" data-checkout>Checkout</button>
   </div>
 </aside>
 
 <div class="modal" data-modal role="dialog" aria-modal="true" aria-labelledby="modal-title">
   <div class="modal__box">
     <h3 id="modal-title">Preview mode</h3>
-    <p data-modal-text style="color:var(--ink-soft)">This is a preview of the store. Payments (Stripe) will be connected before launch.</p>
+    <p data-modal-text>This is a preview of the store. Checkout will be switched on before launch.</p>
     <button class="btn" type="button" data-close-modal>Got it</button>
   </div>
 </div>
