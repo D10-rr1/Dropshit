@@ -2,7 +2,12 @@
 
 // Paste a Stripe Payment Link for each pack here to turn on real checkout.
 // Leave empty to keep the store in preview mode.
-const CHECKOUT_LINKS = { 1: "", 2: "", 3: "" };
+const CHECKOUT_LINKS = {
+  1: "https://buy.stripe.com/7sY7sKbwT2NXaJU1ne2881h",
+  2: "https://buy.stripe.com/fZu00i7gDfAJ4lwd5W2881i",
+  3: "https://buy.stripe.com/28E9AScAXbkt3hs0ja2881g",
+};
+
 
 const BUNDLES = {
   1: { name: "1 Brush", price: 29.99, was: null },
