@@ -108,6 +108,13 @@ document.querySelector('[data-contact]').addEventListener('submit', function (e)
 
 for slug, (title, body) in PAGES.items():
     page_head = re.sub(r"<title>.*?</title>", f"<title>{title} – Pawmist</title>", head, flags=re.S)
+    # Ensure Vercel Analytics is included if not already present
+    if "/_vercel/insights/script.js" not in page_head:
+        page_head = page_head.replace("</head>", """  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>""")
     html = f"""{page_head}<body>
 {header}
 <main class="page">
