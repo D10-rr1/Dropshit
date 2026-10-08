@@ -1,0 +1,11 @@
+/* Pawmist theme: overrides the shared base styles in styles.css. */
+:root {
+  --brand: #1F8A84;
+  --brand-dark: #176B66;
+  --brand-soft: #E3F3F1;
+  --dark: #16302F;
+  --tint: #F2FAF9;
+  --yes: #1F8A84;
+  --logo: "Fredoka", "Inter", sans-serif;
+}
+.logo span { font-size: 1.4rem; letter-spacing: .08em; padding-left: .08em; color: var(--dark); }

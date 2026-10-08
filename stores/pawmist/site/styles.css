@@ -1,16 +1,16 @@
 :root {
-  --brand: #1F8A84;
-  --brand-dark: #176B66;
-  --brand-soft: #E3F3F1;
+  --brand: #C8553D;
+  --brand-dark: #A8432E;
+  --brand-soft: #FBEDE8;
   --ink: #1A1A1A;
   --ink-soft: #555;
-  --dark: #16302F;
+  --dark: #1F1F1F;
   --line: #E4E4E4;
   --bg: #FFFFFF;
-  --tint: #F2FAF9;
-  --yes: #1F8A84;
+  --tint: #FAF6F3;
+  --yes: #C8553D;
   --font: "Inter", Arial, Helvetica, sans-serif;
-  --logo: "Fredoka", "Inter", sans-serif;
+  --logo: "Cormorant Garamond", Georgia, serif;
 }
 
 * { box-sizing: border-box; }
@@ -54,7 +54,7 @@ p { margin: 0 0 1em; }
 .menu-btn { display: none; justify-self: start; }
 .logo { display: inline-flex; flex-direction: column; align-items: center; gap: 2px; text-decoration: none; color: var(--ink); }
 .logo img { width: 26px; height: 26px; }
-.logo span { font-family: var(--logo); font-size: 1.4rem; letter-spacing: .08em; line-height: 1; padding-left: .08em; color: var(--dark); }
+.logo span { font-family: var(--logo); font-size: 1.35rem; letter-spacing: .22em; line-height: 1; padding-left: .22em; }
 .cart-btn { justify-self: end; position: relative; }
 .cart-count { position: absolute; top: -2px; right: -4px; background: var(--brand); color: #fff; font-size: .68rem; font-weight: 700; min-width: 18px; height: 18px; border-radius: 99px; display: grid; place-items: center; padding: 0 4px; }
 .cart-count[data-count="0"] { display: none; }
