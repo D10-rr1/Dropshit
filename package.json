@@ -1,0 +1,11 @@
+{
+  "name": "emberwell-store",
+  "version": "1.0.0",
+  "description": "Emberwell – one-product store (rechargeable hand warmer)",
+  "scripts": {
+    "build": "python3 tools/build_pages.py"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.3.1"
+  }
+}
