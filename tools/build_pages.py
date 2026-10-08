@@ -65,6 +65,27 @@ PAGES = {
 <p>To the extent permitted by law, our liability is limited to the purchase price of the product.</p>
 <h2>Contact</h2>
 <p>Questions about these terms? Email <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>"""),
+  "about": ("About us", f"""
+<p>Cold hands ruin good days: the morning commute, the dog walk, the game in the stands. Disposable hand warmers work once and end up in the trash.</p>
+<p>So we set out to make something better: a rechargeable warmer small enough for any pocket, that splits in two so both hands stay warm.</p>
+<p>That's Emberwell. Questions? Email <a href="mailto:{EMAIL}">{EMAIL}</a>. A real person always answers.</p>"""),
+  "track": ("Track your order", f"""
+<p>When your order ships, we email you a tracking link. Click it to follow your package all the way to your door.</p>
+<h2>Can't find the email?</h2>
+<p>Check your spam folder, or email <a href="mailto:{EMAIL}">{EMAIL}</a> with your order number and we'll send you the tracking link again.</p>
+<h2>Delivery time</h2>
+<p>Orders usually arrive within 7–15 business days.</p>"""),
+  "faq": ("Frequently asked questions", f"""
+<h2>How long does the battery last?</h2>
+<p>It depends on the heat level: the lowest level lasts the longest. It recharges with the included USB-C cable.</p>
+<h2>How hot does it get?</h2>
+<p>There are three levels, from gentle warmth to properly hot. Start on low and don't hold it against bare skin for long periods or use it while sleeping.</p>
+<h2>Can I take it on a plane?</h2>
+<p>Yes, in your carry-on. It contains a lithium battery, so don't pack it in checked luggage.</p>
+<h2>How long does shipping take?</h2>
+<p>Usually 7–15 business days. Shipping is free and you'll get a tracking link by email.</p>
+<h2>What if I don't like it?</h2>
+<p>You have a 30-day money-back guarantee. Email <a href="mailto:{EMAIL}">{EMAIL}</a> and we'll sort it out.</p>"""),
   "contact": ("Contact us", f"""
 <p>Questions about your order or the product? A real person answers every message, usually within 24 hours on weekdays.</p>
 <p>📧 <a href="mailto:{EMAIL}">{EMAIL}</a></p>
@@ -73,7 +94,7 @@ PAGES = {
 <label>Email<input name="email" type="email" required></label>
 <label>Order number (optional)<input name="order"></label>
 <label>Message<textarea name="message" rows="5" required></textarea></label>
-<button class="btn" type="submit">Send message</button>
+<button class="atc" type="submit">SEND MESSAGE</button>
 </form>
 <script>
 document.querySelector('[data-contact]').addEventListener('submit', function (e) {{
