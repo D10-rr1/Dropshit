@@ -2,8 +2,11 @@
 
 // Paste a Stripe Payment Link for each pack here to turn on real checkout.
 // Leave empty to keep the store in preview mode.
-const CHECKOUT_LINKS = { 1: "", 2: "", 3: "" };
-
+const CHECKOUT_LINKS = {
+  1: "https://buy.stripe.com/14AeVc8kHgEN8BMea02881k",
+  2: "https://buy.stripe.com/7sY14m9oL9clf0a5Du2881j",
+  3: "https://buy.stripe.com/8x2fZg6cz88hbNY4zq2881f",
+};
 const BUNDLES = {
   1: { name: "1 Set", price: 34.99, was: null },
   2: { name: "2 Sets", price: 59.99, was: 69.98 },
