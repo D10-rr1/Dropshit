@@ -108,6 +108,9 @@ document.querySelector('[data-contact]').addEventListener('submit', function (e)
 
 for slug, (title, body) in PAGES.items():
     page_head = re.sub(r"<title>.*?</title>", f"<title>{title} – Emberwell</title>", head, flags=re.S)
+    # Ensure analytics scripts are included in generated pages (if not already present from index.html)
+    if '<script src="/analytics.js"></script>' not in page_head:
+        page_head = page_head.replace('</head>', '  <script src="/analytics.js"></script>\n  <script defer src="/_vercel/insights/script.js"></script>\n</head>')
     html = f"""{page_head}<body>
 {header}
 <main class="page">
